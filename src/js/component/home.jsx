@@ -33,7 +33,7 @@ const Home = () => {
 			</input>
 			<div>
 				<ul className="list-group-item disabled" aria-disabled="true">
-						{list.map((item, index) => <li key={index} className={index}>{item} <span>X</span></li>)}
+						{list.map((item, index) => <li key={index} className={index}>{item} <button onClick={() => {deleteItem(index)}}>delete</button></li>)}
 				</ul>
 			</div>
 		</div>
